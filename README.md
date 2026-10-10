@@ -1,4 +1,23 @@
-# Oracle 轻量客户端
+# OraLite · Oracle 轻量客户端
+
+> 轻量级 Oracle 客户端 —— 面向开发与运维人员的日常 SQL 与诊断工具。
+> A lightweight Oracle client for developers and DBAs — everyday queries and diagnostics without a heavy IDE.
+> 開発者・DBA 向けの軽量 Oracle クライアント。重厚な IDE なしで日常のクエリと診断を。
+
+## 关于 / About / 概要
+
+**作者：Lovemikan**
+
+### 中文
+OraLite 是一款轻量级 Oracle 客户端，面向开发与运维人员，用来处理那些“随手就该做、又不想为此启动专业工具”的高频小事。它无意替代 PL/SQL Developer 等重量级 IDE，而是专注于：看数据、跑即席查询、以安全优先的方式改数。内置 33 条只读诊断 SQL 模板（会话、锁、慢 SQL、表空间等），提供数据探查工具（重复值/值分布检查、基于外键的跨表钻取），并能在账号缺少 DBA 视图时自动降级能力、给出明确的权限提示。只读模式与生产环境标识，帮你避免连错库、改错库。纯 Python 实现（ttkbootstrap + python-oracledb thin 模式），无需安装 Oracle 客户端，支持 Excel 导入导出。
+
+### English
+OraLite is a lightweight Oracle client for developers and DBAs who need a quick, everyday tool for routine tasks — without launching a heavyweight IDE like PL/SQL Developer. It is not meant to replace professional tools; instead it focuses on the high-frequency, low-risk jobs: browsing data, running ad-hoc queries, and editing rows with a safety-first mindset. Highlights include a built-in library of 33 read-only diagnostic SQL templates (sessions, locks, slow SQL, tablespaces), a data-exploration toolkit (duplicate/value-distribution checks and cross-table drill-down via foreign keys), and adaptive permission handling that gracefully degrades when your account lacks DBA views and tells you exactly what's missing. A read-only mode and production-environment markers help prevent accidental changes on the wrong database. Pure Python (ttkbootstrap + python-oracledb thin mode), no Oracle client required, with friendly Excel import/export.
+
+### 日本語
+OraLite は、開発者や DBA が日常的に行う「ちょっとした作業のために重厚な IDE を起動するのは面倒」という場面に向けた、軽量な Oracle クライアントです。PL/SQL Developer などのプロ向けツールの代替ではなく、データの閲覧、アドホックなクエリ実行、安全を重視した行の編集といった、高頻度で低リスクな作業に特化しています。主な特徴は、セッション・ロック・遅い SQL・表領域（テーブルスペース）などに対応した「33 種類の読み取り専用診断 SQL テンプレート」、重複値や値の分布の確認・外部キーを活用したテーブル間ドリルダウンなどの「データ探索ツール」、そして DBA ビューへの権限がないアカウントでも機能を自動的に縮退させ、権限不足を分かりやすく提示する仕組みです。読み取り専用モードと本番環境マーカーにより、誤ったデータベースへの接続や変更を防ぎます。純粋な Python（ttkbootstrap ＋ python-oracledb シン・モード）で実装され、Oracle クライアントのインストールが不要で、Excel のインポート／エクスポートにも対応しています。
+
+---
 
 面向 **Oracle 初学者** 和 **熟悉 Excel 但不熟悉 Oracle** 的用户的图形化数据库工具。
 不用写 SQL 也能查数据、改数据，写操作前自动备份、可一键还原，结果一键导出 Excel。
