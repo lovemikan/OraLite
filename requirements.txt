@@ -1,0 +1,10 @@
+# Oracle 轻量客户端 依赖清单
+# 安装：双击“安装依赖.bat”，或执行 .venv\Scripts\python.exe -m pip install -r requirements.txt
+
+python-oracledb>=1.4.0      # 直连 Oracle（瘦模式，无需安装 Oracle 客户端）
+openpyxl>=3.1.0             # 导出 Excel(.xlsx)
+ttkbootstrap>=1.10.0        # 界面主题
+pillow>=10.0.0              # 图标与主题依赖
+
+# 仅打包成 exe 时需要（双击“打包便携版.bat”会自动补装）
+pyinstaller>=6.0.0

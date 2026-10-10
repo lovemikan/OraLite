@@ -1,0 +1,19 @@
+# 虚拟环境与打包产物
+.venv/
+build/
+dist/
+*.spec
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 便携运行产生的数据（含连接口令，勿入库）
+UserData/
+*.xlsx
+*.csv
+
+# 自检临时文件与项目内部工作记忆（勿入库）
+_自检结果.txt
+.workbuddy/
